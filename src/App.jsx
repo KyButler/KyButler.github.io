@@ -17,6 +17,7 @@ const App = () => {
       ls.set('showWIPAlert', true);
     }
     document.title = `KyButler's Site`;
+    console.log('v1.0.2');
   });
 
   const closeWarning = () => {
@@ -47,7 +48,6 @@ const App = () => {
         </Alert>
         </Container> : null}
 
-
       <Switch>
         <Route exact path='/'>
           <Home />
@@ -65,7 +65,6 @@ const App = () => {
           <Trello />
         </Route>
       </Switch>
-    </>
-  );
+    </>);
 };
 export default App;

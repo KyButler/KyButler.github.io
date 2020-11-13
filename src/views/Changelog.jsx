@@ -1,9 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, Container } from 'react-bootstrap';
 
 const Changelog = () => {
+  useEffect(() => {
+    document.title = `KyButler's Site - Changelog`;
+    window.gtag('config', 'G-H3Q4RMNZNV', { 'page_title': document.title, page_path: window.location.pathname + window.location.search });
+  });
+
   return (
     <>
+      <Container style={{ marginBottom: '1em' }}>
+        <Card bg='light'>
+          <Card.Header>
+            <Card.Title>
+              11/13/2020
+            </Card.Title>
+          </Card.Header>
+          <Card.Body>
+            <ul>
+              <li>Removed loading icon on Twitch page, it was causing jank movement on player load</li>
+              <li>Added The KyButler Collective on the home screen</li>
+            </ul>
+          </Card.Body>
+        </Card>
+      </Container>
+
+      <Container style={{ marginBottom: '1em' }}>
+        <Card bg='light'>
+          <Card.Header>
+            <Card.Title>
+              11/11/2020
+            </Card.Title>
+          </Card.Header>
+          <Card.Body>
+            <ul>
+              <li>Added analytics</li>
+            </ul>
+          </Card.Body>
+        </Card>
+      </Container>
+
       <Container style={{ marginBottom: '1em' }}>
         <Card bg='light'>
           <Card.Header>

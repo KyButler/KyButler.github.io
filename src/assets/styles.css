@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One:regular');
-
 body, html {
   font-family: 'Fugaz One', sans-serif;
   background-color: #f3b9b9;
@@ -8,6 +7,15 @@ body, html {
 .kybutler-text {
   color: #f3b9b9;
   text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.sour-text {
+  color: #4817f7;
+  cursor: pointer;
+}
+
+.sour-text:hover {
+  text-decoration: underline;
 }
 
 .discord-text {

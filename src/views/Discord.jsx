@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Container, Col, Image, Jumbotron, Row } from 'react-bootstrap';
 
 const Discord = () => {
+  useEffect(() => {
+    document.title = `KyButler's Site - Discord`;
+    window.gtag('config', 'G-H3Q4RMNZNV', { 'page_title': document.title, page_path: window.location.pathname + window.location.search });
+  });
+
   const buttons = [{
     title: 'Discord Server',
     link: 'https://discordapp.com/invite/mgWCDbe',
