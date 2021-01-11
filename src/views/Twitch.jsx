@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
-import { TwitchEmbed } from 'react-twitch-embed';
+// import { TwitchEmbed } from 'react-twitch-embed';
 
 const Twitch = () => {
 
@@ -10,13 +10,13 @@ const Twitch = () => {
   });
 
   return (<>
-    <TwitchEmbed
+    {/* <TwitchEmbed
       channel="KyButler"
       id="KyButler"
       theme="dark"
       width='100%'
       height='1000px'
-    />
+    /> */}
   </>
   );
 

@@ -15,25 +15,23 @@ module.exports = {
     modules: ['node_modules', './src'],
     extensions: ['.js', '.jsx', '.css'],
   },
-  node: {
-    fs: 'empty'
-  },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        loader: 'babel-loader',
+        test: /\.m?(js|jsx)$/,
         exclude: /node_modules/,
-        query: {
-          presets: ['@babel/preset-env', '@babel/preset-react'],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
         },
       },
-      { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
-      { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader' },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
+      { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
+      { test: /\.(png|jpe?g|gif)$/i, use: 'file-loader' },
     ],
   },
   plugins: [

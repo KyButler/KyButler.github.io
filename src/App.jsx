@@ -22,7 +22,7 @@ const App = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/twitch">Twitch</Nav.Link>
+            {/* <Nav.Link as={Link} to="/twitch">Twitch</Nav.Link> */}
             <Nav.Link as={Link} to="/discord">Discord</Nav.Link>
             <Nav.Link as={Link} to="/trello">Trello</Nav.Link>
           </Nav>
@@ -36,9 +36,9 @@ const App = () => {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/twitch'>
+        {/* <Route exact path='/twitch'>
           <Twitch />
-        </Route>
+        </Route> */}
         <Route exact path='/changelog'>
           <Changelog />
         </Route>
