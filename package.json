@@ -4,7 +4,7 @@
   "description": "A personal site for random things!",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config ./webpack/webpack.config --progress --profile --bail",
+    "build": "webpack --config ./webpack/webpack.config.js --progress --profile --bail",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "wpdev": "webpack serve --hot --port 7217 --config ./webpack/webpack-dev.config.js"

@@ -3,6 +3,17 @@
       {
         "change": [
           {
+            "date": "1/11/2020",
+            "changed": [
+              "Updated webpack and React, disabled broken Twitch page",
+              "Made changelog actually react the changelog.json"
+            ]
+          }
+        ]
+      },
+      {
+        "change": [
+          {
             "date": "11/13/2020",
             "changed": [
               "Added some images to bottom of home page with links",
@@ -16,9 +27,7 @@
       {
         "change": [
           {
-            "date": "11/11/2020"
-          },
-          {
+            "date": "11/11/2020",
             "changed": [
               "Added analytics"
             ]
@@ -28,9 +37,7 @@
       {
         "change": [
           {
-            "date": "11/9/2020"
-          },
-          {
+            "date": "11/9/2020",
             "changed": [
               "'First Commit'",
               "Added Twitch Page",
