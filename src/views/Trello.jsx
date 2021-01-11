@@ -9,7 +9,7 @@ const Trello = () => {
   });
 
   return (<>
-    {loading ? <center><Spinner animation="border" variant="light" /></center> : null}
+    {loading ? <center style={{marginTop: '1em'}}><Spinner animation="border" variant="light" /></center> : null}
     <iframe src="https://trello.com/b/oG4w3rhH.html" frameBorder="0" width="100%" height="100%" onLoad={() => setLoading(false)}></iframe>
   </>);
 }

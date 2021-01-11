@@ -19,7 +19,7 @@ const App = () => {
     <>
       <Navbar />
 
-      <Suspense fallback={<center><Spinner animation="border" variant="light" /></center>}>
+      <Suspense fallback={<center style={{marginTop: '1em'}}><Spinner animation="border" variant="light" /></center>}>
         <Switch>
           <Route exact path='/' component={Home} />
           {/* <Route exact path='/twitch' component={Twitch} /> */}

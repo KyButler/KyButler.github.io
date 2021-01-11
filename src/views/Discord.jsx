@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, Container, Col, Image, Jumbotron, Row } from 'react-bootstrap';
+import { Button, Container, Col, Jumbotron, Row } from 'react-bootstrap';
 
 const Discord = () => {
   useEffect(() => {
