@@ -1,0 +1,1 @@
+(self.webpackChunkkybutler=self.webpackChunkkybutler||[]).push([[971],{971:(e,t,u)=>{"use strict";u.r(t),u.d(t,{default:()=>c});var n=u(294);const c=function(){return(0,n.useEffect)((function(){document.title="KyButler's Site - Twitch"})),n.createElement(n.Fragment,null)}}}]);
