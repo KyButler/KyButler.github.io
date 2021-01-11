@@ -1,4 +1,3 @@
-import ls from 'local-storage';
 import React, { Suspense, lazy, useEffect } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import { Navbar, Nav, Spinner } from 'react-bootstrap';
@@ -12,7 +11,6 @@ const Twitch = lazy(() => import('./views/Twitch'));
 const App = () => {
   useEffect(() => {
     document.title = `KyButler's Site`;
-    ls.clear();
   });
 
   return (

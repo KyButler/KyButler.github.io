@@ -20,7 +20,6 @@
   },
   "homepage": "https://kybutler.github.io/",
   "dependencies": {
-    "local-storage": "^2.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
