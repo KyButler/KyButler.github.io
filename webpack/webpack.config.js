@@ -30,10 +30,15 @@ module.exports = {
       },
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader' },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: './src/assets/images/favicon.png',
       template: './src/index.html',
     }),
   ],

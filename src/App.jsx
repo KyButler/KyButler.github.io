@@ -10,20 +10,10 @@ import Trello from './views/Trello';
 import Twitch from './views/Twitch';
 
 const App = () => {
-  const [showWIPAlert, setShowWIPAlert] = useState(ls.get('showWIPAlert') != null ? ls.get('showWIPAlert') : true);
-
   useEffect(() => {
-    if (ls.get('showWIPAlert') == null) {
-      ls.set('showWIPAlert', true);
-    }
     document.title = `KyButler's Site`;
-    console.log('v1.0.2');
+    ls.clear();
   });
-
-  const closeWarning = () => {
-    setShowWIPAlert(false);
-    ls.set('showWIPAlert', false);
-  }
 
   return (
     <>
@@ -41,12 +31,6 @@ const App = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      {showWIPAlert ?
-        <Container>
-          <Alert variant='info' onClose={() => closeWarning()} dismissible>
-            This site is new, and very much a WIP!
-        </Alert>
-        </Container> : null}
 
       <Switch>
         <Route exact path='/'>

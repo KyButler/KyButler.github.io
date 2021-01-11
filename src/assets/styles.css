@@ -64,3 +64,8 @@ body, html {
 .trello-color {
   background-color: #0079bf;
 }
+
+.image-on-hover:hover {
+  opacity: .95;
+  cursor: pointer;
+}

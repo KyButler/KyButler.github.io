@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
-import { Button, Container, Col, Image, Jumbotron, ResponsiveEmbed, Row } from 'react-bootstrap';
+import { Button, Card, Container, Col, Image, Jumbotron, ResponsiveEmbed, Row } from 'react-bootstrap';
 
+import BillyBanner from '../assets/images/VRChat_1920x1080_2020-02-28_20-33-40.552.png';
+import Johann710Banner from '../assets/images/VRChat_1920x1080_2020-04-05_13-18-23.897.png';
 import LilyPFP from '../assets/images/LilyPFP.png';
+import LilyBanner from '../assets/images/VRChat_1920x1080_2020-11-11_19-48-16.201.png';
+import SourBanner from '../assets/images/VRChat_1920x1080_2020-11-11_22-56-07.930.png';
 
 const Home = () => {
   useEffect(() => {
@@ -97,14 +101,12 @@ const Home = () => {
       ))}
     </Container>
 
-
-
-    <Container style={{ marginBottom: '10em' }}>
+    <Container style={{ marginBottom: '3em' }}>
       <hr />
       <Row>
         <Col xs={{ order: 'last' }} md={{ order: 'first' }} xs={12}>
           <ResponsiveEmbed aspectRatio='1by1'>
-            <iframe style={{ border: 0, width: '100%', height: '100%' }} src="https://bandcamp.com/EmbeddedPlayer/track=2833081214/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://thesourknights.bandcamp.com/track/the-kybutler-collective">The KyButler Collective by The Sour Knights</a></iframe>
+            <iframe style={{ border: 0, width: '100%', height: '100%', borderRadius: '5px' }} src="https://bandcamp.com/EmbeddedPlayer/track=2833081214/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://thesourknights.bandcamp.com/track/the-kybutler-collective">The KyButler Collective by The Sour Knights</a></iframe>
           </ResponsiveEmbed>
         </Col>
         <Col xs={{ order: 'first' }} md={{ order: 'last' }}>
@@ -116,6 +118,30 @@ const Home = () => {
           </Jumbotron>
         </Col>
 
+      </Row>
+    </Container>
+
+    <Container style={{ marginBottom: '10em' }}>
+      <hr />
+      <Row>
+        <Col>
+          <Image className='image-on-hover' onClick={() => window.open('https://www.twitch.tv/andynya', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={LilyBanner} fluid />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Image className='image-on-hover' onClick={() => window.open('https://www.twitch.tv/conanbutler', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={BillyBanner} fluid />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Image className='image-on-hover' onClick={() => window.open('https://www.twitch.tv/j0hann710', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={Johann710Banner} fluid />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Image className='image-on-hover' onClick={() => window.open('https://www.youtube.com/channel/UC1YhDvjc50ax8D_RlwdLB6Q', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={SourBanner} fluid />
+        </Col>
       </Row>
     </Container>
   </>
