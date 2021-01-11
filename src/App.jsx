@@ -1,13 +1,13 @@
 import ls from 'local-storage';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
-import { Alert, Container, Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Spinner } from 'react-bootstrap';
 
-import Changelog from './views/Changelog';
-import Discord from './views/Discord';
-import Home from './views/Home';
-import Trello from './views/Trello';
-import Twitch from './views/Twitch';
+const Changelog = lazy(() => import('./views/Changelog'));
+const Discord = lazy(() => import('./views/Discord'));
+const Home = lazy(() => import('./views/Home'));
+const Trello = lazy(() => import('./views/Trello'));
+const Twitch = lazy(() => import('./views/Twitch'));
 
 const App = () => {
   useEffect(() => {
@@ -32,23 +32,15 @@ const App = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        {/* <Route exact path='/twitch'>
-          <Twitch />
-        </Route> */}
-        <Route exact path='/changelog'>
-          <Changelog />
-        </Route>
-        <Route exact path='/discord'>
-          <Discord />
-        </Route>
-        <Route exact path='/trello'>
-          <Trello />
-        </Route>
-      </Switch>
+      <Suspense fallback={<center><Spinner animation="border" variant="light" /></center>}>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          {/* <Route exact path='/twitch' component={Twitch} /> */}
+          <Route exact path='/changelog' component={Changelog} />
+          <Route exact path='/discord' component={Discord} />
+          <Route exact path='/trello' component={Trello} />
+        </Switch>
+      </Suspense>
     </>);
 };
 export default App;
