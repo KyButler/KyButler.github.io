@@ -26,7 +26,7 @@ const Discord = () => {
             </p>
           </Jumbotron>
           {buttons.map((button, i) => (
-            <div className="button-container">
+            <div className="button-container" key={i}>
               <Button
                 onClick={() => (window.open(button.link), '_blank')}
                 className={`mb-2 ${button.colorName}-color`}
@@ -41,7 +41,7 @@ const Discord = () => {
           ))}
         </Col>
         <Col xs={{ order: 'last' }} md={{ order: 'last' }}>
-          <iframe src="https://ptb.discord.com/widget?id=571371327177621504&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <iframe src="https://ptb.discord.com/widget?id=571371327177621504&theme=dark" width="100%" height="500" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </Col>
       </Row>
     </Container>);

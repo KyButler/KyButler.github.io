@@ -9,7 +9,8 @@
               "Made changelog actually react the changelog.json",
               "Removed analytics",
               "Fixed navbar",
-              "100% height Trello"
+              "100% height Trello",
+              "re-enabled broken twitch page, which is fixed"
             ]
           }
         ]

@@ -74,7 +74,7 @@ const Home = () => {
       </Row>
 
       {buttons.map((button, i) => (
-        <Row>
+        <Row key={i}>
           <Col>
             <div className="button-container">
               <Button

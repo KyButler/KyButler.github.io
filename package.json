@@ -18,12 +18,13 @@
   "bugs": {
     "url": "https://github.com/KyButler/KyButler/issues"
   },
-  "homepage": "https://kybutler.github.io/",
+  "homepage": "https://ky.butlerhq.com/",
   "dependencies": {
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-twitch-embed-video": "^2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

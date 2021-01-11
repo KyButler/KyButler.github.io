@@ -22,7 +22,7 @@ const App = () => {
       <Suspense fallback={<center style={{marginTop: '1em'}}><Spinner animation="border" variant="light" /></center>}>
         <Switch>
           <Route exact path='/' component={Home} />
-          {/* <Route exact path='/twitch' component={Twitch} /> */}
+          <Route exact path='/twitch' component={Twitch} />
           <Route exact path='/changelog' component={Changelog} />
           <Route exact path='/discord' component={Discord} />
           <Route exact path='/trello' component={Trello} />
