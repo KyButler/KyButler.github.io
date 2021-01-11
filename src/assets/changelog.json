@@ -6,7 +6,8 @@
             "date": "1/11/2020",
             "changed": [
               "Updated webpack and React, disabled broken Twitch page",
-              "Made changelog actually react the changelog.json"
+              "Made changelog actually react the changelog.json",
+              "Removed analytics"
             ]
           }
         ]

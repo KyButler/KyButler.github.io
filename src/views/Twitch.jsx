@@ -6,7 +6,6 @@ const Twitch = () => {
 
   useEffect(() => {
     document.title = `KyButler's Site - Twitch`;
-    window.gtag('config', 'G-H3Q4RMNZNV', { 'page_title': document.title, page_path: window.location.pathname + window.location.search });
   });
 
   return (<>

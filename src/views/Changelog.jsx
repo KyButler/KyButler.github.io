@@ -6,7 +6,6 @@ import changelog from '../assets/changelog.json';
 const Changelog = () => {
   useEffect(() => {
     document.title = `KyButler's Site - Changelog`;
-    window.gtag('config', 'G-H3Q4RMNZNV', { 'page_title': document.title, page_path: window.location.pathname + window.location.search });
   });
 
   const getEntries = () => {

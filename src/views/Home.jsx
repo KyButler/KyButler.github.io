@@ -10,11 +10,9 @@ import SourBanner from '../assets/images/VRChat_1920x1080_2020-11-11_22-56-07.93
 const Home = () => {
   useEffect(() => {
     document.title = `KyButler's Site - Home`;
-    window.gtag('config', 'G-H3Q4RMNZNV', { 'page_title': document.title, page_path: window.location.pathname + window.location.search });
   });
 
   const onClickButton = (link, name) => {
-    window.gtag('event', 'click_button', { 'event_label': name, 'event_category': 'button' });
     window.open(link, '_blank');
   }
 
