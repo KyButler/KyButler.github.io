@@ -56,7 +56,7 @@ const Home = () => {
   ]
 
   return (<>
-    <Container style={{ marginBottom: '3em' }}>
+    <Container style={{ marginBottom: '3em', marginTop: '1em' }}>
       <Row>
         <Col xs={{ order: 'last' }} md={{ order: 'first' }} xs={12}>
           <Jumbotron>
@@ -72,13 +72,6 @@ const Home = () => {
           <Image src={LilyPFP} style={{ marginBottom: '1em', borderRadius: '5px' }} fluid />
         </Col>
       </Row>
-
-      {/* <Row>
-        <Col>
-          <h1>Links!</h1>
-          <hr />
-        </Col>
-      </Row> */}
 
       {buttons.map((button, i) => (
         <Row>

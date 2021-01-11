@@ -13,7 +13,7 @@ const Discord = () => {
   },]
 
   return (
-    <Container >
+    <Container style={{marginTop: '1em'}}>
       <Row>
         <Col xs={{ order: 'first' }} md={{ order: 'first' }} xs={12}>
 

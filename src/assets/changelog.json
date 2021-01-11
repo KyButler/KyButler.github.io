@@ -7,7 +7,9 @@
             "changed": [
               "Updated webpack and React, disabled broken Twitch page",
               "Made changelog actually react the changelog.json",
-              "Removed analytics"
+              "Removed analytics",
+              "Fixed navbar",
+              "100% height Trello"
             ]
           }
         ]

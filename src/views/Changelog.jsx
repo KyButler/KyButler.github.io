@@ -32,9 +32,9 @@ const Changelog = () => {
   }
 
   return (
-    <>
+    <div style={{marginTop: '1em'}}>
       {getEntries()}
-    </>
+    </div>
   );
 }
 
