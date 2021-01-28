@@ -4,7 +4,7 @@ import { Button, Container, Col, Jumbotron, Row } from 'react-bootstrap';
 const Discord = () => {
   useEffect(() => {
     document.title = `KyButler's Site - Discord`;
-  });
+  }, []);
 
   const buttons = [{
     title: 'Discord Server',

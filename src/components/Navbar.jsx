@@ -11,6 +11,7 @@ const Navbar = () => {
             <BSNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link as={Link} to="/twitch">Twitch</Nav.Link>
+                    <Nav.Link as={Link} to="/youtube">YouTube</Nav.Link>
                     <Nav.Link as={Link} to="/discord">Discord</Nav.Link>
                     <Nav.Link as={Link} to="/trello">Trello</Nav.Link>
                 </Nav>

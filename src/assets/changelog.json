@@ -3,7 +3,19 @@
       {
         "change": [
           {
-            "date": "1/11/2020",
+            "date": "1/19/2021",
+            "changed": [
+              "Added personal AWS API",
+              "Added YouTube page",
+              "Added a 404 page"
+            ]
+          }
+        ]
+      },
+      {
+        "change": [
+          {
+            "date": "1/11/2021",
             "changed": [
               "Updated webpack and React, disabled broken Twitch page",
               "Made changelog actually react the changelog.json",
