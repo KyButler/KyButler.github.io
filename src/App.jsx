@@ -5,6 +5,8 @@ import { Spinner } from 'react-bootstrap';
 import Navbar from './components/Navbar';
 
 const Status = lazy(()=> import('./views/Status'));
+
+const AvatarList = lazy(() => import('./views/AvatarList'));
 const Changelog = lazy(() => import('./views/Changelog'));
 const Discord = lazy(() => import('./views/Discord'));
 const Home = lazy(() => import('./views/Home'));
@@ -23,6 +25,11 @@ const App = () => {
       path: '/',
       exact: true,
       render: <Home />
+    },
+    {
+      path: '/avatarlist',
+      exact: true,
+      render: <AvatarList />
     },
     {
       path: '/changelog',

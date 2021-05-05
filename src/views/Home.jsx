@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button, Container, Col, Image, Jumbotron, ResponsiveEmbed, Row } from 'react-bootstrap';
 
-import BillyBanner from '../assets/images/VRChat_1920x1080_2020-02-28_20-33-40.552.png';
 import Johann710Banner from '../assets/images/VRChat_1920x1080_2020-04-05_13-18-23.897.png';
 import LilyPFP from '../assets/images/LilyPFP.png';
 import LilyBanner from '../assets/images/VRChat_1920x1080_2020-11-11_19-48-16.201.png';
@@ -118,11 +117,6 @@ const Home = () => {
       <Row>
         <Col>
           <Image className='image-on-hover' onClick={() => window.open('https://www.twitch.tv/andynya', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={LilyBanner} fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Image className='image-on-hover' onClick={() => window.open('https://www.twitch.tv/conanbutler', '_blank')} style={{ borderRadius: '5px', marginBottom: '1em' }} src={BillyBanner} fluid />
         </Col>
       </Row>
       <Row>

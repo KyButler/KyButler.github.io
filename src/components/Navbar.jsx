@@ -14,6 +14,7 @@ const Navbar = () => {
                     <Nav.Link as={Link} to="/youtube">YouTube</Nav.Link>
                     <Nav.Link as={Link} to="/discord">Discord</Nav.Link>
                     <Nav.Link as={Link} to="/trello">Trello</Nav.Link>
+                    <Nav.Link as={Link} to="/avatarlist">Avatar List</Nav.Link>
                 </Nav>
                 <Nav>
                     <Nav.Link as={Link} to="/changelog" className="float-right">Changelog</Nav.Link>
