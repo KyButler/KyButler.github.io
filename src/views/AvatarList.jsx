@@ -8,9 +8,13 @@ import WinterLily from '../assets/images/avatar-thumbnails/3 - Winter Lily.png';
 import SleepyLily from '../assets/images/avatar-thumbnails/4 - Sleepy Lily.png';
 import SleepyLilyGiant from '../assets/images/avatar-thumbnails/5 - Giant Sleepy Lily.png';
 import MeguminLily from '../assets/images/avatar-thumbnails/6 - Megumin Lily.png';
+import SchoolLily from '../assets/images/avatar-thumbnails/7 - School Lily.png';
+import ChristmasLily from '../assets/images/avatar-thumbnails/8 - Christmas Lily.png';
 
-import AzukiLily from '../assets/images/avatar-thumbnails/19 - Azuki Lily.png';
-import DripLily from '../assets/images/avatar-thumbnails/20 - Drip Lily.png';
+import Lilykyu from '../assets/images/avatar-thumbnails/11 - Lilykyu.png';
+import SwimsuitLily from '../assets/images/avatar-thumbnails/12 - Swimsuit Lily.png';
+import AzukiLily from '../assets/images/avatar-thumbnails/13 - Azuki Lily.png';
+import DripLily from '../assets/images/avatar-thumbnails/14 - Drip Lily.png';
 
 function thumbnailFormatter(cell) {
     if (cell) {
@@ -309,25 +313,27 @@ const avatars = [
         isInSuva: true,
         isOnVRChat: true,
         isOnQuest: true,
-        isPublic: false,
-        isinWorld: false,
+        isPublic: true,
+        isinWorld: true,
         thumbnail: DripLily,
         version: 3
     }, {
-        name: 'Schoolgirl Lily',
-        isInSuva: false,
+        name: 'School Lily',
+        isInSuva: true,
         isOnVRChat: true,
         isOnQuest: true,
         isPublic: true,
         isinWorld: true,
-        version: 2
+        thumbnail: SchoolLily,
+        version: 3
     }, {
         name: 'Christmas Lily',
-        isInSuva: false,
+        isInSuva: true,
         isOnVRChat: true,
         isOnQuest: true,
         isPublic: true,
         isinWorld: true,
+        thumbnail: ChristmasLily,
         version: 2
     }, {
         name: 'Schoolgirl Lily Poly-kon',
@@ -342,40 +348,42 @@ const avatars = [
         isInSuva: false,
         isOnVRChat: true,
         isOnQuest: true,
-        isPublic: true,
+        isPublic: false,
         isinWorld: true,
         version: 2
     }, {
         name: 'Lilykyu',
-        isInSuva: false,
+        isInSuva: true,
         isOnVRChat: true,
         isOnQuest: true,
         isPublic: true,
         isinWorld: true,
-        version: '2.5'
+        thumbnail: Lilykyu,
+        version: '3'
     }, {
         name: 'Swimsuit Lily',
-        isInSuva: false,
+        isInSuva: true,
         isOnVRChat: true,
         isOnQuest: true,
         isPublic: true,
         isinWorld: true,
-        version: '2.5'
+        thumbnail: SwimsuitLily,
+        version: '2.75'
     }, {
         name: 'Suit Billy',
         isInSuva: false,
         isOnVRChat: true,
         isOnQuest: true,
         isPublic: false,
-        isinWorld: true,
+        isinWorld: false,
         version: '2'
     }, {
         name: 'Schoolboy Billy',
         isInSuva: false,
         isOnVRChat: true,
         isOnQuest: true,
-        isPublic: true,
-        isinWorld: true,
+        isPublic: false,
+        isinWorld: false,
         version: '2'
     }]
 
