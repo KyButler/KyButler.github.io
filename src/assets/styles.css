@@ -9,7 +9,7 @@ body, html, #app {
 
 .kybutler-text {
   color: #f3b9b9;
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .sour-text {
@@ -60,57 +60,27 @@ body, html, #app {
   background-color: #6441a5;
 }
 
-.instagram-color {
-  background-color: transparent;
+.instagram-color{  
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.instagram-color:hover{  
+  background: #343a40; 
 }
 
 .trello-color {
   background-color: #0079bf;
 }
 
+.tiktok-color {
+  background-color: #000;
+}
+
 .image-on-hover:hover {
   opacity: .95;
   cursor: pointer;
-}
-
-th {
-  cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome, Edge, Opera and Firefox */
-}
-
-th .order-4:before {
-  margin-left: 3.5px;
-  content: "\2191";
-  opacity: 0.4;
-}
-
-th .order-4:after {
-  content: "\2193";
-  opacity: 0.4;
-}
-
-th .caret-4-asc:before {
-  margin-left: 3.5px;
-  content: "\2191";
-}
-
-th .caret-4-asc:after {
-  content: "\2193";
-  opacity: 0.4;
-}
-
-th .caret-4-desc:before {
-  margin-left: 3.5px;
-  content: "\2191";
-  opacity: 0.4;
-}
-
-th .caret-4-desc:after {
-  content: "\2193";
 }

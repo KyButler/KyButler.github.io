@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, Container, Col, Image, Jumbotron, ResponsiveEmbed, Row } from 'react-bootstrap';
+import { Button, Container, Col, Image, Row, Ratio } from 'react-bootstrap';
 
 import Johann710Banner from '../assets/images/VRChat_1920x1080_2020-04-05_13-18-23.897.png';
 import LilyPFP from '../assets/images/LilyPFP.png';
@@ -58,14 +58,14 @@ const Home = () => {
     <Container style={{ marginBottom: '3em', marginTop: '1em' }}>
       <Row>
         <Col xs={{ order: 'last' }} md={{ order: 'first' }} xs={12}>
-          <Jumbotron>
+          <div>
             <h1>Hi, I'm <span className='kybutler-text'>KyButler!</span></h1>
 
             <p>
-              . . . a university student who has too much time for videogames
+              . . . a recently graduated university student who has too much time for videogames
               - hopefully you'll enjoy watching me play some as much as I like playing them!
             </p>
-          </Jumbotron>
+          </div>
         </Col>
         <Col xs={{ order: 'first' }} md={{ order: 'last' }}>
           <Image src={LilyPFP} style={{ marginBottom: '1em', borderRadius: '5px' }} fluid />
@@ -96,17 +96,17 @@ const Home = () => {
       <hr />
       <Row>
         <Col xs={{ order: 'last' }} md={{ order: 'first' }} xs={12}>
-          <ResponsiveEmbed aspectRatio='1by1'>
+          <Ratio aspectRatio='1x1'>
             <iframe style={{ border: 0, width: '100%', height: '100%', borderRadius: '5px' }} src="https://bandcamp.com/EmbeddedPlayer/track=2833081214/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://thesourknights.bandcamp.com/track/the-kybutler-collective">The KyButler Collective by The Sour Knights</a></iframe>
-          </ResponsiveEmbed>
+          </Ratio>
         </Col>
         <Col xs={{ order: 'first' }} md={{ order: 'last' }}>
-          <Jumbotron>
+          <div>
             <h1>The <span className='kybutler-text'>KyButler</span>  Collective</h1>
             <hr />
             <p>This is a track created by <span className='sour-text' onClick={() => window.open('https://www.youtube.com/channel/UC1YhDvjc50ax8D_RlwdLB6Q', '_blank')}>The Sour Knights</span> dedicated to, well . . . me!
               I love this song and I love the work that Sour puts into his music, definitely worth checking out!</p>
-          </Jumbotron>
+          </div>
         </Col>
 
       </Row>

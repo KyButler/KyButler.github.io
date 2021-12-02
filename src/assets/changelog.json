@@ -3,6 +3,20 @@
       {
         "change": [
           {
+            "date": "12/1/2021",
+            "changed": [
+              "Removed avatar list",
+              "Removed AWS API",
+              "Changed home page text slightly",
+              "Updated dependencies",
+              "Removed YouTube page"
+            ]
+          }
+        ]
+      },
+      {
+        "change": [
+          {
             "date": "5/5/2021",
             "changed": [
               "Added avatar list"

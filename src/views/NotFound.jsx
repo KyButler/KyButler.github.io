@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, Container, Jumbotron } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {
@@ -9,7 +9,7 @@ const NotFound = () => {
 
     return (
         <Container style={{ marginTop: '1em' }}>
-            <Jumbotron>
+            <Container>
                 <center>
                     <h1>
                         404
@@ -25,7 +25,7 @@ const NotFound = () => {
                         </Button>
                     </Link>
                 </center>
-            </Jumbotron>
+            </Container>
         </Container>
     )
 }
