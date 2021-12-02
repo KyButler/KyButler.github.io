@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config ./webpack/webpack.config.js --progress --profile --bail",
     "predeploy": "npm run build",
-    "deploy": "/** -d dist",
+    "deploy": "gh-pages -d dist",
     "wpdev": "webpack serve --hot --port 7217 --config ./webpack/webpack-dev.config.js"
   },
   "repository": {
