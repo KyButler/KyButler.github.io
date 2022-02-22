@@ -1,5 +1,6 @@
 dist
 node_modules
+webpack
 package-lock.json
 package.json
 src/assets/bootstrap.min.css

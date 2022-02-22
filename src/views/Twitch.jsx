@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import ReactTwitchEmbedVideo from 'react-twitch-embed-video';
 
 const Twitch = () => {

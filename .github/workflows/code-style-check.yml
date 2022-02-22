@@ -1,4 +1,4 @@
-name: Prettier Check
+name: Code Style Check
 on:
   pull_request:
     branches:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Check Prettier
         run: npx prettier --check .
+
+      - name: 'Run ESLint'
+        run: npx eslint . --ext .js,.jsx

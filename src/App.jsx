@@ -5,7 +5,7 @@ import {Spinner} from 'react-bootstrap';
 import Navbar from './components/Navbar';
 
 const Changelog = lazy(() => import('./views/Changelog'));
-const Home = lazy(() => import('./views/HomeNew'));
+const Home = lazy(() => import('./views/Home'));
 const NotFound = lazy(() => import('./views/NotFound'));
 const Trello = lazy(() => import('./views/Trello'));
 const Twitch = lazy(() => import('./views/Twitch'));
