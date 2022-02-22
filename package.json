@@ -17,6 +17,7 @@
   "scripts": {
     "build": "webpack --config ./webpack/webpack.config.js --progress --profile --bail",
     "predeploy": "npm run build",
+    "lint": "npx eslint --ext .js --ext .jsx .",
     "wpdev": "webpack serve --hot --port 7217 --config ./webpack/webpack-dev.config.js"
   },
   "dependencies": {
@@ -35,6 +36,9 @@
     "@babel/preset-react": "7.16.7",
     "babel-loader": "8.2.3",
     "css-loader": "6.6.0",
+    "eslint": "8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-react": "^7.28.0",
     "file-loader": "6.2.0",
     "gh-pages": "3.2.3",
     "html-webpack-plugin": "5.5.0",
