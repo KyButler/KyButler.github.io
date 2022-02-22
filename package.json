@@ -2,7 +2,7 @@
   "name": "kybutler",
   "version": "1.0.0",
   "description": "A personal site for random things!",
-  "main": "index.jsx",
+  "main": "src/Index.jsx",
   "scripts": {
     "build": "webpack --config ./webpack/webpack.config.js --progress --profile --bail",
     "predeploy": "npm run build",
