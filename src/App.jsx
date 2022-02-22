@@ -1,12 +1,12 @@
-import React, { Suspense, lazy, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Spinner } from 'react-bootstrap';
+import React, {Suspense, lazy, useEffect} from 'react';
+import {Route, Routes} from 'react-router-dom';
+import {Spinner} from 'react-bootstrap';
 
 import Navbar from './components/Navbar';
 
 const Changelog = lazy(() => import('./views/Changelog'));
 const Home = lazy(() => import('./views/HomeNew'));
-const NotFound = lazy(()=> import('./views/NotFound'));
+const NotFound = lazy(() => import('./views/NotFound'));
 const Trello = lazy(() => import('./views/Trello'));
 const Twitch = lazy(() => import('./views/Twitch'));
 
@@ -19,40 +19,46 @@ const App = () => {
     {
       path: '/',
       exact: true,
-      render: <Home />
+      render: <Home />,
     },
     {
       path: '/changelog',
       exact: true,
-      render: <Changelog />
+      render: <Changelog />,
     },
     {
       path: '/trello',
       exact: true,
-      render: <Trello />
+      render: <Trello />,
     },
     {
       path: '/twitch',
       exact: true,
-      render: <Twitch />
+      render: <Twitch />,
     },
     {
       path: '*',
       exact: false,
-      render: <NotFound />
+      render: <NotFound />,
     },
-  ]
+  ];
 
   return (
     <>
       <Navbar />
-      <Suspense fallback={<center style={{marginTop: '1em'}}><Spinner animation="border" variant="light" /></center>}>
+      <Suspense
+        fallback={
+          <center style={{marginTop: '1em'}}>
+            <Spinner animation="border" variant="light" />
+          </center>
+        }>
         <Routes>
-          {ROUTES.map((route) => (
+          {ROUTES.map(route => (
             <Route key={route.path} exact={route.exact} path={route.path} element={route.render} />
           ))}
         </Routes>
       </Suspense>
-    </>);
+    </>
+  );
 };
 export default App;
