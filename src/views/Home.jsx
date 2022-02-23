@@ -29,8 +29,8 @@ const HomeNew = () => {
       colorName: 'youtube',
     },
     {
-      title: 'Twitter (LilyTheFoxgirl)',
-      link: 'https://www.twitter.com/LilyTheFoxgirl',
+      title: 'Twitter (KyButler_)',
+      link: 'https://www.twitter.com/kybutler_',
       colorName: 'twitter',
     },
     {
@@ -39,8 +39,8 @@ const HomeNew = () => {
       colorName: 'twitter',
     },
     {
-      title: 'Instagram (LilyTheFoxgirl)',
-      link: 'https://www.instagram.com/lilythefoxgirl/',
+      title: 'Instagram (kybutler_)',
+      link: 'https://www.instagram.com/kybutler_/',
       colorName: 'instagram',
     },
     {
