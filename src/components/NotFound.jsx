@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const NotFound = () => {
   useEffect(() => {
-    document.title = `KyButler's Site - Not Found`;
+    document.title = "KyButler's Site - Not Found";
   }, []);
 
   return (
@@ -13,10 +13,10 @@ const NotFound = () => {
         <center>
           <h1>
             404
-            <br />
+            <br/>
           </h1>
           <h2>Nothing was found here.</h2>
-          <br />
+          <br/>
           <Link to="/">
             <Button renderAs="button">Click here to go back Home!</Button>
           </Link>

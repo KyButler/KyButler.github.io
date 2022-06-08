@@ -9,20 +9,12 @@ const Navbar = () => {
         <BSNavbar.Brand as={Link} to="/" variant="dark">
           KyButler
         </BSNavbar.Brand>
-        <BSNavbar.Toggle aria-controls="navbar" />
+        <BSNavbar.Toggle aria-controls="navbar"/>
         <BSNavbar.Collapse id="navbar">
-          <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/twitch">
-              Twitch
-            </Nav.Link>
-            <Nav.Link as={Link} to="/trello">
-              Trello
-            </Nav.Link>
-          </Nav>
           <Nav>
-            <Nav.Link as={Link} to="/changelog">
-              Changelog
-            </Nav.Link>
+            <a className="nav-link" href="https://trello.com/b/oG4w3rhH/kybutler">
+              Trello
+            </a>
           </Nav>
         </BSNavbar.Collapse>
       </Container>

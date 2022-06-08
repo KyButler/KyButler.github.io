@@ -1,15 +1,11 @@
 import React, {useEffect} from 'react';
 import {Button, Card, Container, Col, Image, Row} from 'react-bootstrap';
 
-import ScrollReveal from 'scrollreveal';
+import ProfilePicture from '../assets/images/profile_picture.png';
 
-import LilyPFP from '../assets/images/LilyPFP.png';
-
-const HomeNew = () => {
+const Home = () => {
   useEffect(() => {
-    document.title = `KyButler's Site - Home`;
-
-    ScrollReveal().reveal('.sr', {delay: 100});
+    document.title = "KyButler's Site - Home";
   });
 
   const buttons = [
@@ -19,7 +15,7 @@ const HomeNew = () => {
       colorName: 'twitch',
     },
     {
-      title: `Discord Server (KyButler's Discord)`,
+      title: "Discord Server (KyButler's Discord)",
       link: 'https://discordapp.com/invite/mgWCDbe',
       colorName: 'discord',
     },
@@ -58,7 +54,7 @@ const HomeNew = () => {
   return (
     <>
       <Container className="sr">
-        <Row>
+        <Row className="mt-3">
           <Col className="mt-4" xs={{order: 'last', span: 12}} md={{order: 'first', span: 6}}>
             <Card className="shadow">
               <Card.Body>
@@ -76,7 +72,7 @@ const HomeNew = () => {
             </Card>
           </Col>
           <Col className="mt-4" xs={{order: 'first'}} md={{order: 'last'}}>
-            <Image className="shadow" fluid src={LilyPFP} rounded />
+            <Image className="shadow" fluid src={ProfilePicture} rounded/>
           </Col>
         </Row>
       </Container>
@@ -96,7 +92,7 @@ const HomeNew = () => {
       </Container>
 
       <Container className="sr">
-        <hr className="mt-4" />
+        <hr className="mt-4"/>
       </Container>
 
       <Container className="sr">
@@ -131,7 +127,7 @@ const HomeNew = () => {
       </Container>
 
       <Container className="sr">
-        <hr className="mt-4" />
+        <hr className="mt-4"/>
       </Container>
 
       <Container className="sr">
@@ -167,7 +163,7 @@ const HomeNew = () => {
       </Container>
 
       <Container className="sr">
-        <hr className="mt-4" />
+        <hr className="mt-4"/>
       </Container>
 
       <Container className="sr">
@@ -189,10 +185,10 @@ const HomeNew = () => {
       </Container>
 
       <Container className="sr">
-        <hr className="mt-4" />
+        <hr className="mt-4"/>
       </Container>
     </>
   );
 };
 
-export default HomeNew;
+export default Home;
