@@ -138,7 +138,6 @@ const Home = () => {
               src="https://discord.com/widget?id=571371327177621504&theme=dark"
               width="350"
               height="500"
-              allowtransparency="true"
               frameBorder="0"
               sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
           </Col>

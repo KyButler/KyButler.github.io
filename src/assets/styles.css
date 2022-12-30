@@ -3,14 +3,14 @@ body,
 html,
 #app {
   font-family: 'Fugaz One', sans-serif;
-  background-color: #f3b9b9;
+  background-color: #c9fd66;
   height: 100%;
   max-height: 100% !important;
   padding-top: 18px;
 }
 
 .kybutler-text {
-  color: #f3b9b9;
+  color: #ae7669;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
@@ -30,7 +30,7 @@ html,
 /* colors */
 
 .navbar {
-  background-color: black;
+  background-color: #3a2f24;
 }
 
 .button-container {
